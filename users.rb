@@ -2,7 +2,7 @@ require 'octokit'
 
 subject, output = ARGV
 
-client = Octokit::Client.new :access_token => ENV['62eb7ad494ab8b8c2d9f5b0d72b1c19c813ac193']
+client = Octokit::Client.new :access_token => ENV['YOUR TOKEN']
 results = client.search_users(subject)
 total_count = results.total_count
 last_response = client.last_response
